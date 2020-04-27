@@ -72,6 +72,8 @@ while n<epoch:
 ani = animation.ArtistAnimation(fig, ims, interval=200, blit=True,
                                 repeat_delay=500)
 
+ani.save("gol.gif",writer='pillow')
+
 plt.show()
     
     
