@@ -19,7 +19,7 @@ game[27,21] = 1
 game[27,22] = 1
 game[28,22] = 1
 game[28,22] = 1
-game[29,22] = 1
+game[28,24] = 1
 game[29,23] = 1
 # game[25,29] = 1
 
@@ -36,11 +36,11 @@ newGame = np.copy(game)
 #plt.figure(1)
 #plt.imshow(game, 'gray')
 
-epoch = 100
+epoch = 300
 n=0
 while n<epoch:
     n=n+1
-    print(n)       
+    #print(n)       
     for i in range(xC):
         for j in range(yC):
             n_neigh = game[(j-1)%xC, (i-1)%yC] + \
